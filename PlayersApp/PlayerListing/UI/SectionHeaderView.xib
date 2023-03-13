@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SectionHeaderView" customModule="PlayersApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="54"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IbE-0x-ejN">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="54"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JVe-uP-BbT">
+                            <rect key="frame" x="16" y="6" width="343" height="42"/>
+                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="28"/>
+                            <color key="textColor" name="Primary Mid"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="JVe-uP-BbT" secondAttribute="trailing" constant="16" id="AyS-hJ-Twg"/>
+                        <constraint firstItem="JVe-uP-BbT" firstAttribute="top" secondItem="IbE-0x-ejN" secondAttribute="top" constant="6" id="Ti5-6h-QeC"/>
+                        <constraint firstAttribute="bottom" secondItem="JVe-uP-BbT" secondAttribute="bottom" constant="6" id="WT1-Xw-doU"/>
+                        <constraint firstItem="JVe-uP-BbT" firstAttribute="leading" secondItem="IbE-0x-ejN" secondAttribute="leading" constant="16" id="yeE-Nu-uO1"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="IbE-0x-ejN" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="FZa-Hq-GDX"/>
+                <constraint firstItem="IbE-0x-ejN" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="aA1-MI-itt"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="IbE-0x-ejN" secondAttribute="trailing" id="aA4-Bn-7BZ"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="IbE-0x-ejN" secondAttribute="bottom" id="wgB-FQ-k30"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="headerLabel" destination="JVe-uP-BbT" id="6uz-zL-vXz"/>
+            </connections>
+            <point key="canvasLocation" x="12.977099236641221" y="-195.07042253521126"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="Primary Mid">
+            <color red="0.87058823529411766" green="0.14509803921568629" blue="0.22745098039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
