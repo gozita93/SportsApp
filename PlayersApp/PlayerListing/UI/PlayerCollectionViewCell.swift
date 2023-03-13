@@ -54,8 +54,8 @@ extension PlayerCollectionViewCell {
             blue: 0,
             alpha: 0.15
         ).cgColor
-        cellContentView.layer.shadowOffset = CGSize(width: 0, height: 0.0)
-        cellContentView.layer.shadowRadius = 10.0
+        cellContentView.layer.shadowOffset = CGSize(width: 1.0, height: 1.0)
+        cellContentView.layer.shadowRadius = 5.0
         cellContentView.layer.shadowOpacity = 1
         cellContentView.layer.masksToBounds = false
     }
