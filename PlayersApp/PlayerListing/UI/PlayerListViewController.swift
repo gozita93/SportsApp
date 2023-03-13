@@ -111,7 +111,7 @@ extension PlayerListViewController: UITableViewDataSource, UITableViewDelegate {
         case .topPlayer:
             return 192.0
         case .allPlayer:
-            return CGFloat(64 * viewModel.players.count + 10)
+            return CGFloat(64 * viewModel.players.count + 30)
         }
     }
     

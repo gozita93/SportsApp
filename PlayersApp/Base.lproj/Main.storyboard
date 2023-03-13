@@ -18,6 +18,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wki-Au-EjE">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="0.0"/>
+                                <color key="backgroundColor" name="Primary"/>
+                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eyG-X8-jpU" customClass="SearchHeaderView" customModule="PlayersApp" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="68"/>
                                 <constraints>
@@ -36,9 +40,13 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="wki-Au-EjE" firstAttribute="trailing" secondItem="eyG-X8-jpU" secondAttribute="trailing" id="3GW-fo-Wri"/>
                             <constraint firstItem="L2d-eb-HEz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="4Iy-cB-lNR"/>
+                            <constraint firstItem="wki-Au-EjE" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Chn-o1-cog"/>
                             <constraint firstItem="eyG-X8-jpU" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Hgo-sv-ChQ"/>
                             <constraint firstItem="eyG-X8-jpU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="KQI-n7-a7c"/>
+                            <constraint firstItem="wki-Au-EjE" firstAttribute="bottom" secondItem="eyG-X8-jpU" secondAttribute="top" id="hKU-XE-hXD"/>
+                            <constraint firstItem="wki-Au-EjE" firstAttribute="leading" secondItem="eyG-X8-jpU" secondAttribute="leading" id="l96-Qu-kjh"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="L2d-eb-HEz" secondAttribute="bottom" id="sbp-Lc-qlb"/>
                             <constraint firstItem="eyG-X8-jpU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="wS4-Vg-syM"/>
                             <constraint firstItem="L2d-eb-HEz" firstAttribute="top" secondItem="eyG-X8-jpU" secondAttribute="bottom" id="zGt-Bb-cuq"/>
@@ -79,6 +87,9 @@
     </scenes>
     <resources>
         <namedColor name="AccentColor">
+            <color red="0.94901960784313721" green="0.25098039215686274" blue="0.30196078431372547" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Primary">
             <color red="0.94901960784313721" green="0.25098039215686274" blue="0.30196078431372547" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
