@@ -14,8 +14,8 @@ public protocol LoadPlayersViewModelDelegate: AnyObject {
 }
 
 enum Section: String {
-    case topPlayer = "Top Player"
-    case allPlayer = "All Player"
+    case topPlayer = "Top Players"
+    case allPlayer = "All Players"
     
     var numberOfItems: Int {
         switch self {
